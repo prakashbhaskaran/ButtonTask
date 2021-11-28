@@ -1,0 +1,88 @@
+/*Begin here*/
+body {
+  background-color: black;
+}
+button {
+  font-size: 14px;
+  align-items: center;
+  width: 200px;
+  height: 44px;
+  border-radius: 30px;
+  outline: none;
+  border: hidden;
+  background-color: #00abe7;
+  color: white;
+  position: relative;
+}
+button.focus:focus {
+  border: 1px solid #0070b4;
+}
+
+button.hover:hover {
+  background-color: #7fd5f3;
+}
+button.disabled:disabled {
+  background-color: #bfeaf9;
+}
+button.drop {
+  background-color: #0070b4;
+}
+
+.droplist {
+  position: absolute;
+  background-color: white;
+  color: black;
+  margin-top: 20px;
+  margin-left: -5px;
+  width: 200px;
+  height: 153px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #0000000d;
+}
+.droplist ul {
+  text-align: left;
+  padding: 0;
+}
+.droplist ul li {
+  list-style: none;
+}
+.droplist::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: 65px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+.arrow::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    top: 6px;
+    right: -4px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+transform: rotate(180deg);
+}
+
+.chosen {
+  border-left: 5px solid #0070b4;
+  padding: 12px;
+}
+.another {
+  color: #7f7f7f;
+  padding: 12px;
+}
+.health {
+  background-color: #eef1f4;
+  padding: 12px;
+}
+
+.arrow {
+  position: absolute;
+  margin-left: 40px;
+  font-size: 10px;
+}
